@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Positions</title>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const socket = io("http://localhost:3001");
+
+            socket.on("connect", () => {
+                console.log("Connected to server");
+            });
+
+            socket.on("vehiclePosition", (data) => {
+                console.log("Vehicle Position:", data);
+                // Affiche la position du véhicule sur la page ou mettre à jour une carte
+            });
+
+            socket.on("vehicleAlert", (data) => {
+                console.log("Vehicle Alert:", data);
+                // Affiche l'alerte du véhicule sur la page
+            });
+
+            socket.on("disconnect", () => {
+                console.log("Disconnected from server");
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Vehicle Positions</h1>
+<div id="positions"></div>
+<div id="alerts"></div>
+</body>
+</html>

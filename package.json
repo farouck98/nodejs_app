@@ -1,0 +1,26 @@
+{
+  "name": "3npm_project",
+  "version": "1.0.0",
+  "description": ": le projet met en place un serveur node.js capable de simuler et surveiller les positions des véhicules en temps réel",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mohamed Farouck LATOUNDJI",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "events": "^3.3.0",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.5",
+    "url": "^0.11.3"
+  }
+}
