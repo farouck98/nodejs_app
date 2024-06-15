@@ -79,20 +79,13 @@ le serveur sera accessible sur le port 3001
           }
 
        - Pour la requête user logout par exemple:
-      # Sélectionnez POST comme requête HTTP et entrez l'URL: http://localhost:3001/api/users/login
-      # Ajoutez les entêtes : Dans l'onglet 'Headers', ajoutez en entête 'Content type' avec la valeur 'application/json'
-      # Ajoutez le corps de la requête : Allez dans l'onglet 'Body', sélectionnez 'raw' et choisissez 'JSON' dans le menu déroulant
-      # Ajoutez un exemple de corps de requête JSON avec les champs requis, par exemple:
-          {
-            "email": "votre_email@example.com",
-            "password": "votre_mot_de_passe"
-          }
+      # Sélectionnez POST comme requête HTTP et entrez l'URL: http://localhost:3001/api/users/logout
       # Envoyez la requête:
       Cliquez le bouton 'Send' à l'eXtrême droite
       Vous devriez recevoir une réponse avec le statut 200 OK et un message de succès,
       par exemple :
       {
-      "message": "Utilisateur authentifié avec succès"
+            "message": "Utilisateur déconnecté avec succès"
       }
        - Pour la requête add vehicle position par exemple:
       # Sélectionnez POST comme requête HTTP et entrez l'URL: http://localhost:3001/api/uehicles/add-position
