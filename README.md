@@ -41,7 +41,7 @@ le serveur sera accessible sur le port 3001
     - Par exemple donnez le nom "user authentification" pour la connexion d'un utilisateur et
     ajoutez la à la collection users précédemment créée.
     
-    - Par exemple donnez le nom "user logout" pour la connexion d'un utilisateur et
+    - Par exemple donnez le nom "user logout" pour la déconnexion d'un utilisateur et
     ajoutez la à la collection users précédemment créée.
     
     - Par exemple donnez le nom "add vehicle Position" pour l'ajout des données de postion
